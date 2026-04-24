@@ -8,7 +8,7 @@ from openai import OpenAI
 
 ROOT_DIR = Path(__file__).resolve().parents[1]
 ENV_FILE = ROOT_DIR / ".env"
-SKILLS_FILE = ROOT_DIR / "code_review" / "skills.md"
+SKILLS_FILE = ROOT_DIR / "code_review" / "skills" / "code_review_skill.md"
 
 load_dotenv(ENV_FILE)
 
@@ -29,6 +29,7 @@ def run(command):
 
 def get_repo_files():
     files = run(["git", "ls-files"]).splitlines()
+    # files = run(["git", "diff", "--cached", "--name-only", "--diff-filter=ACM"]).splitlines()
 
     allowed = (
         ".java",
