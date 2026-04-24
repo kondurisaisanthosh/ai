@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/api/posts")
 public class PostController {
 
+    //adding comments
     private final PostService postService;
 
     public PostController(PostService postService) {
