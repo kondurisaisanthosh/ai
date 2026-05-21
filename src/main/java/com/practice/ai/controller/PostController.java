@@ -11,6 +11,8 @@ public class PostController {
     //adding comments
     private final PostService postService;
 
+    private final String secret = "abc123";
+
     public PostController(PostService postService) {
         this.postService = postService;
     }

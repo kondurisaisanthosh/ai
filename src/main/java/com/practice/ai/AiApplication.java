@@ -10,6 +10,9 @@ public class AiApplication {
 		System.out.println("debug");
 		SpringApplication.run(AiApplication.class, args);
 		System.out.println("debug123");
+		System.out.println("debug123");
+		System.out.println("debug123");
+		System.out.println("debug123");
 	}
 
 }
